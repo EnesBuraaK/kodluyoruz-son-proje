@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="avengers-ultron-cagı.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="tiviplus/pictures/TiVi-icon.ico">
+    <title>TiVi+ | Avengers: Ultron çağı</title>
+</head>
+<body>
+    <section id="header">
+            <div class="movie-info">
+                <img src="diziler/avengers/ultron-çağı/logo.png" alt="" width="240px" height="100px">
+                <br><br>
+                <img src="pictures/13yas.png" alt="" width="20px" height="20px" style="float: left;">
+                <span>HD</span><span>SHD</span>
+                <h4><b>2015 • 2 sa 24 dk</b></h5>
+                <br>
+                <p style="color: gray; font-family: 'quicksand-medium'; margin-top: 10px;">Bilim Kurgu, Süper Kahraman, Aksiyon-Macera</p>
+                <br>
+                <p style="color: white; font-family: 'quicksand-regular';">Tony Stark etkin olmayan barış koruyucu bir programı çalıştırınca, <br> işler ters gider böylece Yenilmezler gezegeni hain Ultron'dan <br> kurtarmak için çarpışırken zorlu bir sınavdan geçerler. </p>
+                <button class="play-button"><i style="margin-right: 2px;" class="fa-solid fa-play"></i> OYNAT</button>
+                <button class="play-button-fgm">FRAGMAN</button>
+                <button class="play-button-whtc"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+        <section id="alt-body">
+            <div class="navbar">
+                <p id="önerilenler">ÖNERİLER</p>
+                <p id="ayrıntılar">AYRINTILAR</p>
+                <hr>
+                <table class="image-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                        <a href=""><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/avengers-sonsuzluksavasi-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/ultron-cagi-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/endgame-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="/tiviplus/home-pictures/Sana özel/the-boys.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href=""><img src="/tiviplus/home-pictures/Sana özel/thor-love-and-thunder.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                            <a href=""><img src="/tiviplus/home-pictures/Sana özel/the-batman.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ayrıntılar">
+                    <h1>Avengers: Ultron çağı</h1>
+                    <h5>Marvel Stüdyoları tüm zamanların en iyi Süper Kahraman serisinin destansı devam filmi <br> “Yenilmezler: Ultron Çağı”nı sunar. Tony Stark etkin olmayan barış koruyucu bir programı <br> çalıştırınca, işler ters gider ve Dünyanın En Güçlü Kahramanları olan Iron Man, Kaptan Amerika, <br> Thor, İnanılmaz Hulk, Kara Dul ve Şahingöz, gezegenin kaderi tehlikedeyken zorlu bir sınavdan <br> geçerler. Yenilmezler, birden ortaya çıkan Hain Ultron'un korkunç planını hayata geçirmesini <br> engellemek zorundadır, böylece huzursuz ittifaklar ve beklenmedik aksiyonlar evrensel bir <br> maceraya zemin hazırlar.</h5>
+                </div>
+                <div class="movie-details">
+                    <h4>Süre: <br> <span>2 sa 24 dk</span></h4>
+                    <h4>Yayın Tarihi: <br> <span>2015</span></h4>
+                    <h4>Tür: <br> <span>Bilim Kurgu, Süper Kahraman, Aksiyon-Macera</span></h4>
+                    <h4>Yetişkinlik Düzeyi: <br> </h4>
+                    <img draggable="false" src="pictures/13yas.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="movie-details-2">
+                    <h4>Yönetmen <br> <span>Joss Whedon</span></h4>
+                    <h4>Oyuncular <br> <span>Robert Downey Jr. <br> Chris Evans <br> Mark Ruffalo <br> Chris Hemsworth <br> Scarlett Johansson <br> Jeremy Renner</span></h4>
+                </div>
+            </div>
+        </section>    
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+    
+        blur = false;
+        $(".movie-details").hide();
+        $(".movie-details-2").hide();
+        $(".ayrıntılar").hide();
+        $("#ayrıntılar").click(function(){
+            $(".image-table").hide();
+            $(".ayrıntılar").show(500);
+            $(".movie-details").show(500);
+            $(".movie-details-2").show(500);
+            blur = true;
+            if (blur == true) {
+                document.body.style.backgroundImage = "url('diziler/avengers/ultron-çağı/background-blur.png')";
+            }else {
+                document.body.style.backgroundImage = "url('diziler/avengers/ultron-çağı/background-blur.png')";
+            }
+        });
+    
+    
+        $("#önerilenler").click(function(){
+            document.body.style.backgroundImage = "url('diziler/avengers/ultron-çağı/background.png')";
+            $(".ayrıntılar").hide();
+            $(".movie-details").hide();
+            $(".movie-details-2").hide();
+            $(".image-table").show(500);
+            blur = false;
+        });
+        
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 30) {
+                document.body.style.backgroundImage = "url('diziler/avengers/ultron-çağı/background-blur.png')";
+            } else {
+                document.body.style.backgroundImage = "url('diziler/avengers/ultron-çağı/background.png')";
+            }
+        }
+    </script>
+</body>
+</html>

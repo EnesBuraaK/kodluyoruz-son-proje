@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Raleway-italic';
+    src: url('fonts/Raleway-ThinItalic.woff2') format('woff2'),
+        url('fonts/Raleway-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-thin';
+    src: url('fonts/Raleway-Thin.woff2') format('woff2'),
+        url('fonts/Raleway-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-medium';
+    src: url('fonts/subset-Comfortaa-Medium.woff2') format('woff2'),
+        url('fonts/subset-Comfortaa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-regular';
+    src: url('fonts/subset-Comfortaa-Regular.woff2') format('woff2'),
+        url('fonts/subset-Comfortaa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-bold';
+    src: url('fonts/subset-Comfortaa-Bold.woff2') format('woff2'),
+        url('fonts/subset-Comfortaa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'quicksand-bold';
+    src: url('fonts/subset-Quicksand-Bold.woff2') format('woff2'),
+        url('fonts/subset-Quicksand-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'quicksand-regular';
+    src: url('fonts/subset-Quicksand-Regular.woff2') format('woff2'),
+        url('fonts/subset-Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'quicksand-medium';
+    src: url('fonts/subset-Quicksand-Medium.woff2') format('woff2'),
+        url('fonts/subset-Quicksand-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('diziler/national-treasure/büyük-hazine/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.movie-info {
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.movie-info span {
+    color: rgb(230, 230, 230);
+    padding: 2px;
+    background-color: rgb(54, 54, 54);
+    font-family: 'quicksand-bold';
+    margin-left: 10px;
+    border-radius: 5px;
+    float: left;
+}
+
+.movie-info h4 {
+    color: rgb(230, 230, 230);
+    margin-left: 10px;
+    font-family: 'quicksand-bold';
+    float: left;
+}
+
+.play-button {
+    background-color: rgba(104, 104, 104, 0.5);
+    color: white;
+    font-family: 'quicksand-bold';
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 105px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid transparent;
+    float: left;
+    transition: all 0.2s;
+}
+
+.play-button:hover {
+    width: 115px;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+
+.play-button-fgm {
+    background-color: rgba(104, 104, 104, 0.5);
+    color: white;
+    font-family: 'quicksand-bold';
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 105px;
+    margin-left: 10px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid transparent;
+    float: left;
+    transition: all 0.2s;
+}
+
+.play-button-fgm:hover {
+    width: 115px;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+
+.play-button-whtc {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: rgba(104, 104, 104, 0.5);
+    color: white;
+    font-family: 'quicksand-bold';
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    float: left;
+}
+
+.play-button-whtc:hover {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    margin-left: 25px;
+    margin-top: 12%;
+}
+
+.navbar p {
+    display: inline-block;
+    color: rgb(184, 184, 184);
+    text-decoration: none;
+    font-family: 'quicksand-medium';
+    margin-left: 15px;
+}
+
+hr {
+    margin-left: 15px;
+    margin-top: 5px;
+    background-color: gray;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    }
+    .image-table {
+    border: 4px solid transparent;
+    border-collapse: separate;
+    border-spacing: 15px;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1%;
+    }
+    .image-table img {
+    border: 4px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    border-radius: 15px; 
+    }
+
+    .image-table img:hover {
+        border: 4px solid white;
+    }
+
+    .ayrıntılar {
+        float: left;
+    }
+
+    .ayrıntılar h1 {
+        color: white;
+        font-family: 'quicksand-regular';
+        padding: 15px;
+    }
+
+    .ayrıntılar h5 {
+        color: darkgray;
+        padding: 15px;
+        margin-top: -15px;
+        font-family: 'Comfortaa-bold';
+    }
+
+    .movie-details {
+        padding: 15px;
+        float: left;
+        font-family: 'quicksand-regular';
+        margin-left: 15px;
+    }
+
+    .movie-details h4 {
+        color: rgb(168, 168, 168);
+        margin-top: 15px;
+    }
+
+    .movie-details span {
+        color: white;
+        font-family: 'Raleway-thin';
+    }
+
+    .movie-details-2 {
+        padding: 15px;
+        float: left;
+        font-family: 'quicksand-regular';
+        margin-left: 15px;
+    }
+
+    .movie-details-2 h4 {
+        color: rgb(168, 168, 168);
+        margin-top: 15px;
+    }
+
+    .movie-details-2 span {
+        color: white;
+        font-family: 'Raleway-thin';
+    }
+
+    #önerilenler {
+        cursor: pointer;
+    }
+
+    #ayrıntılar {
+        cursor: pointer;
+    }
+/*────────────────── 
+     Scrollbar
+──────────────────*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px; 
+    background: transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 15px;
+  }
+
+  ::-webkit-scrollbar:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    box-shadow: inset 0 0 20px #7a7a7a;
+  }

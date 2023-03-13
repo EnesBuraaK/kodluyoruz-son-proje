@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'Comfortaa-medium';
+    src: url('tiviplus/fonts/subset-Comfortaa-Medium.woff2') format('woff2'),
+        url('tiviplus/fonts/subset-Comfortaa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-regular';
+    src: url('tiviplus/fonts/subset-Comfortaa-Regular.woff2') format('woff2'),
+        url('tiviplus/fonts/subset-Comfortaa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-bold';
+    src: url('tiviplus/fonts/subset-Comfortaa-Bold.woff2') format('woff2'),
+        url('tiviplus/fonts/subset-Comfortaa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'quicksand-bold';
+    src: url('tiviplus/fonts/subset-Quicksand-Bold.woff2') format('woff2'),
+        url('tiviplus/fonts/subset-Quicksand-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'quicksand-regular';
+    src: url('tiviplus/fonts/subset-Quicksand-Regular.woff2') format('woff2'),
+        url('tiviplus/fonts/subset-Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'quicksand-medium';
+    src: url('tiviplus/fonts/subset-Quicksand-Medium.woff2') format('woff2'),
+        url('tiviplus/fonts/subset-Quicksand-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main {
+    background-color: var(--main-background);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root {
+    --button-color: #e5e4ec;
+    --main-background: #040814;
+    --text-color: white;
+}
+
+/*────────────────── 
+       navbar
+──────────────────*/
+
+
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 15%;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .topnav a.split {
+    float: right;
+    background-color: var(--button-color);
+    color: rgb(0, 0, 0);
+    font-family: 'quicksand-bold';
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 150px;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+
+  .topnav a.split:hover {
+    background-color: #282829;
+    color: white;
+  }
+
+/*────────────────── 
+       header
+──────────────────*/
+
+.rltv {
+    position: relative;
+}
+
+.login-bg {
+    background-image: url('tiviplus/pictures/background-p.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.login {
+    font-family: 'quicksand-bold';
+    text-align: center;
+    color: white;
+}
+
+.login img {
+    margin-bottom: 25px;
+}
+
+.btn-login {
+    word-wrap: break-word;
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'quicksand-bold';
+    margin-top: 15px;
+    font-size: 20px;
+    border: 2px solid darkgray;
+    transition: all 0.5s;
+}
+
+.btn-login:hover {
+    background-color: #282829;
+    color: white;
+}
+
+/*────────────────── 
+    special-mov
+──────────────────*/
+
+.movies-bg {
+    background-color: var(--main-background);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.special-movies {
+    color: white;
+    font-family: 'quicksand-bold';
+    text-align: center;
+    
+}
+
+.special-movies h1 {
+    font-size: 45px;
+}
+
+.show {
+    color: white;
+    font-family: 'quicksand-bold';
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.funny {
+    width: 350px;
+}
+
+.device {
+    width: 350px;
+}
+
+.friendly-app {
+    width: 350px;
+}
+
+.spe-profiles {
+    width: 350px;
+}
+
+.fix {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    background-color: var(--main-background);
+}
+
+.show > .funny, .device, .friendly-app, .spe-profiles {
+    padding: 0 8px;
+  }
+
+  .funny, .device, .friendly-app, .spe-profiles {
+    width: 25%;
+  }
+
+/*────────────────── 
+@media only screen
+──────────────────*/
+
+  @media only screen and (max-width: 551px) {
+    .show {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .funny, .device, .friendly-app, .spe-profiles {
+        width: 35%;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 475px) {
+    .btn-login {
+        width: auto;
+    }
+  }
+
+/*────────────────── 
+Frequently Asked Questions
+──────────────────*/
+
+.faq-bg {
+    background-color: var(--main-background);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.FAQ {
+    color: white;
+    font-family: 'quicksand-bold';
+    text-align: center;
+}
+
+.accordion {
+    background-color: #1a1c27;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 25px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.8s;
+    font-family: 'Comfortaa-bold';
+    margin-top: 15px;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #1a1c27;
+    overflow: hidden;
+    color: var(--text-color);
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Comfortaa-regular';
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .desc {
+    padding: 15px;
+    color: rgb(194, 194, 194);
+
+  }
+
+  .desc ul{
+    padding: 15px;
+    color: rgb(194, 194, 194);
+    margin-left: 40px;
+  }
+  
+/*────────────────── 
+    footer
+──────────────────*/
+
+.fter-bg {
+    background-color: var(--main-background);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-words {
+    font-family: 'Comfortaa-medium';
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 26 8;
+    font-size: 15px;
+    margin: auto;
+    max-width: 1024px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    overflow: auto;
+}
+
+.footer-words a {
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-words a:hover {
+    color: white;
+}
+
+.copyright {
+    color: rgb(155, 155, 155);
+    text-align: center;
+    font-family: 'Comfortaa-medium';
+    margin: 25px;
+    
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}

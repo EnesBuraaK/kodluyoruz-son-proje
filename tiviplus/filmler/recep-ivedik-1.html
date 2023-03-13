@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="recep-ivedik-1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="tiviplus/pictures/TiVi-icon.ico">
+    <title>TiVi+ | Recep İvedik</title>
+</head>
+<body>
+    <section id="header">
+            <div class="movie-info">
+                <img src="diziler/recep-ivedik/recep-ivedik-1/recep-ivedik-1-logo.png" alt="" width="240px" height="100px" draggable="false">
+                <br><br>
+                <img src="pictures/13yas.png" alt="" width="20px" height="20px" style="float: left;" draggable="false">
+                <span>HD</span><span>SHD</span>
+                <h4><b>2008 • 1 sa 41 dk</b></h5>
+                <br>
+                <p style="color: gray; font-family: 'quicksand-medium'; margin-top: 10px;">Komedi</p>
+                <br>
+                <p style="color: white; font-family: 'quicksand-regular';">Antalyalı çok önemli bir iş adamına ait kayıp cüzdanı sahibine teslim eden <br> Recep İvedik. Fakat tam otelden ayrılacakken çocukluk aşkı Sibel’in bir <br> tur otobüsünden indiğini fark eder. Artık Recep İvedik’in <br> tek bir amacı vardır; kendisini tanımayan, hatta hatırlamayan <br> Sibel’e kendini beğendirmek.</p>
+                <button class="play-button"><i style="margin-right: 2px;" class="fa-solid fa-play"></i> OYNAT</button>
+                <button class="play-button-fgm">FRAGMAN</button>
+                <button class="play-button-whtc"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+        <section id="alt-body">
+            <div class="navbar">
+                <p id="önerilenler">ÖNERİLER</p>
+                <p id="ayrıntılar">AYRINTILAR</p>
+                <hr>
+                <table class="image-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                        <a href=""><img src="pictures/new-to-tiviplus/recepivedik.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="pictures/new-to-tiviplus/wednesday.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="pictures/new-to-tiviplus/avatar.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="pictures/new-to-tiviplus/saftirik.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href=""><img src="pictures/new-to-tiviplus/recepivedik.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                        <td>
+                            <a href=""><img src="pictures/new-to-tiviplus/recepivedik.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                        <td>
+                            <a href=""><img src="pictures/new-to-tiviplus/recepivedik.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                        <td>
+                            <a href=""><img src="pictures/new-to-tiviplus/recepivedik.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ayrıntılar">
+                    <h1>Recep İvedik</h1>
+                    <h5>Antalyalı çok önemli bir iş adamına ait kayıp cüzdanı sahibine teslim eden <br> Recep İvedik, iş adamının ısrarlarına rağmen ne para almayı kabul eder ne <br> de adamın otelinde kalmayı. Fakat tam otelden ayrılacakken çocukluk aşkı <br> Sibel’in bir tur otobüsünden indiğini fark eder. Artık Recep İvedik’in tek bir <br> amacı vardır; kendisini tanımayan, hatta hatırlamayan Sibel’e kendini beğendirmek.</h5>
+                </div>
+                <div class="movie-details">
+                    <h4>Süre: <br> <span>1 sa 41 dk</span></h4>
+                    <h4>Yayın Tarihi: <br> <span>2008</span></h4>
+                    <h4>Tür: <br> <span>Komedi</span></h4>
+                    <h4>Yetişkinlik Düzeyi: <br> </h4>
+                    <img draggable="false" src="pictures/13yas.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="movie-details-2">
+                    <h4>Yönetmen <br> <span>Togan Gökbahar</span></h4>
+                    <h4>Oyuncular <br> <span>Şahan Gökbahar <br> Fatma Toptaş <br> Tuluğ Çizgen <br> Lemi Filozof <br> Hakan Bilgin <br> Vural Buldu</span></h4>
+                </div>
+            </div>
+        </section>    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+    blur = false;
+    $(".movie-details").hide();
+    $(".movie-details-2").hide();
+    $(".ayrıntılar").hide();
+    $("#ayrıntılar").click(function(){
+        $(".image-table").hide();
+        $(".ayrıntılar").show(500);
+        $(".movie-details").show(500);
+        $(".movie-details-2").show(500);
+        blur = true;
+        if (blur == true) {
+            document.body.style.backgroundImage = "url('diziler/recep-ivedik/recep-ivedik-1/background-blur.png')";
+        }else {
+            document.body.style.backgroundImage = "url('diziler/recep-ivedik/recep-ivedik-1/background-blur.png')";
+        }
+    });
+
+
+    $("#önerilenler").click(function(){
+        document.body.style.backgroundImage = "url('diziler/recep-ivedik/recep-ivedik-1/background.png')";
+        $(".ayrıntılar").hide();
+        $(".movie-details").hide();
+        $(".movie-details-2").hide();
+        $(".image-table").show(500);
+        blur = false;
+    });
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 30) {
+        document.body.style.backgroundImage = "url('diziler/recep-ivedik/recep-ivedik-1/background-blur.png')";
+        blur = true;
+    } else {
+        document.body.style.backgroundImage = "url('diziler/recep-ivedik/recep-ivedik-1/background.png')";
+        blur = false;
+    }
+    }
+    </script>
+</body>
+</html>

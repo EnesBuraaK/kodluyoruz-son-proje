@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="wednesday.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="pictures/TiVi-icon.ico">
+    <title>TiVi+ | Wednesday</title>
+</head>
+<body>
+    <section id="header">
+            <div class="movie-info">
+                <img src="pictures/wednesday/wednesday-logo.png" alt="" width="240px" height="100px">
+                <br><br>
+                <img src="pictures/18yas.png" alt="" width="25px" height="25px" style="float: left;">
+                <span>HD</span><span>SHD</span>
+                <h4><b>2022 • 1 Sezon</b></h5>
+                <br>
+                <p style="color: gray; font-family: 'quicksand-medium'; margin-top: 10px;">Korku</p>
+                <br>
+                <p style="color: white; font-family: 'quicksand-regular';">Zeki, alaycı ve azıcık içi geçmiş bir kız olan Wednesday <br> Addams, Nevermore  Akademisinde yeni dostlar ve düşmanlar <br> edinirken art arda gerçekleşen  cinayetleri araştırır.</p>
+                <button class="play-button"><i style="margin-right: 2px;" class="fa-solid fa-play"></i> OYNAT</button>
+                <button class="play-button-fgm">FRAGMAN</button>
+                <button class="play-button-whtc"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+        <section id="alt-body">
+            <div class="navbar">
+                <p id="önerilenler">ÖNERİLER</p>
+                <p id="ayrıntılar">AYRINTILAR</p>
+                <hr>
+                <table class="image-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                        <a href="/tiviplus/filmler/Doctor-strange-çoklu-evren.html"><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/doctor-strange-çoklu-evren.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href="/tiviplus/filmler/avengers-ultron-cagı.html"><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/ultron-cagi-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href="/tiviplus/filmler/marvel-avengers.html"><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/marvel-avengers-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href="/tiviplus/filmler/endgame.html"><img src="/tiviplus/filmler/koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/endgame-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/tiviplus/filmler/thor.html"><img src="/tiviplus/home-pictures/Sana özel/thor-love-and-thunder.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                            <a href="/tiviplus/filmler/the-batman.html"><img src="/tiviplus/home-pictures/Sana özel/the-batman.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ayrıntılar">
+                    <h1>Wednesday</h1>
+                    <h5>Zeki, alaycı ve azıcık içi geçmiş bir kız olan Wednesday <br> Addams, Nevermore  Akademisinde yeni dostlar ve düşmanlar <br> edinirken art arda gerçekleşen  cinayetleri araştırır.</h5>
+                </div>
+                <div class="movie-details">
+                    <h4>Süre: <br> <span> 1 Sezon </span></h4>
+                    <h4>Yayın Tarihi: <br> <span>2022</span></h4>
+                    <h4>Tür: <br> <span>Korku</span></h4>
+                    <h4>Yetişkinlik Düzeyi: <br> </h4>
+                    <img draggable="false" src="pictures/18yas.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="movie-details-2">
+                    <h4>Yönetmen <br> <span> Tim Burton </span></h4>
+                    <h4>Oyuncular <br> <span> Jenna Ortega <br> Gwendoline Christie <br> Riki Lindhome <br> Christina Ricci <br> Jamie McShane <br> Hunter Doohan </span></h4>
+                </div>
+            </div>
+        </section> 
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+        $(".movie-details").hide();
+        $(".movie-details-2").hide();
+        $(".ayrıntılar").hide();
+
+        $("#ayrıntılar").click(function(){
+            $(".image-table").hide();
+            $(".ayrıntılar").show(500);
+            $(".movie-details").show(500);
+            $(".movie-details-2").show(500);
+            blur = true;
+            
+        });
+    
+    
+        $("#önerilenler").click(function(){
+            $(".ayrıntılar").hide();
+            $(".movie-details").hide();
+            $(".movie-details-2").hide();
+            $(".image-table").show(500);
+            blur = false;
+        });
+        
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 20) {
+                document.body.style.backgroundImage = "url('diziler/aile/saftirik/background-blur.png')";
+            } else {
+                document.body.style.backgroundImage = "url('diziler/aile/saftirik/background.png')";
+            }
+        }
+    </script>
+</body>
+</html>

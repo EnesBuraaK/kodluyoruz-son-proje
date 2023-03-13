@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="doctor-strange.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="tiviplus/pictures/TiVi-icon.ico">
+    <title>TiVi+ | Doktor Strange</title>
+</head>
+<body>
+    <section id="header">
+            <div class="movie-info">
+                <img src="diziler/avengers/doctor-strange/doctor-strange/logo.png" alt="" width="240px" height="100px">
+                <br><br>
+                <h1>IMAX Enhanced Formatıyla Yayında</h1>
+                <br>
+                <img src="pictures/13yas.png" alt="" width="20px" height="20px" style="float: left;">
+                <span>HD</span><span>SHD</span><span>CC</span>
+                <h4><b>2016 • 1 sa 56 dk</b></h5>
+                <br>
+                <p style="color: gray; font-family: 'quicksand-medium'; margin-top: 10px;">Bilim Kurgu, Fantastik, Süper Kahraman, Aksiyon-Macera</p>
+                <br>
+                <p style="color: white; font-family: 'quicksand-regular';">Marvel Studios’un Doctor Strange’inde, dünyaca ünlü bir beyin cerrahı <br> korkunç bir araba kazasında ellerini kaybeder. İyileşmenin bir yolunu <br> ararken, gerçekliğimizi yok etmeye çalışan görünmeyen karanlık güçlere <br> karşı verilen savaşın cephesi Kamar-Taj adlı gizemli yerde güçlü bir sihir bulur.</p>
+                <button class="play-button"><i style="margin-right: 2px;" class="fa-solid fa-play"></i> OYNAT</button>
+                <button class="play-button-fgm">FRAGMAN</button>
+                <button class="play-button-whtc"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+        <section id="alt-body">
+            <div class="navbar">
+                <p id="önerilenler">ÖNERİLER</p>
+                <p id="ayrıntılar">AYRINTILAR</p>
+                <hr>
+                <table class="image-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                        <a href="Doctor-strange-çoklu-evren.html"><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/doctor-strange-çoklu-evren.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href="avengers-ultron-cagı.html"><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/ultron-cagi-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href="marvel-avengers.html"><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/marvel-avengers-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href="endgame.html"><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/endgame-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="thor.html"><img src="/tiviplus/home-pictures/Sana özel/thor-love-and-thunder.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                            <a href="the-batman.html"><img src="/tiviplus/home-pictures/Sana özel/the-batman.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ayrıntılar">
+                    <h1>Doctor Strange</h1>
+                    <h5>Marvel Stüdyoları'nda "Doctor Strange" da MSU, <br> Çoklu Evrenin kilidini açarak sınırlarını her zamankinden daha çok zorluyor. <br> Eski ve yeni mistik dostların yardımıyla Doktor Strange ile bilinmeyene yolculuk, <br> gizemli, yeni bir düşmanla yüzleşmek için Çoklu Evren'in akıl almaz ve tehlikeli <br> alternatif gerçekliklerinde ilerliyor.</h5>
+                </div>
+                <div class="movie-details">
+                    <h4>Süre: <br> <span>1 sa 56 dk</span></h4>
+                    <h4>Yayın Tarihi: <br> <span>2016</span></h4>
+                    <h4>Tür: <br> <span>Bilim Kurgu, Fantastik, Süper Kahraman <br> Aksiyon-Macera</span></h4>
+                    <h4>Yetişkinlik Düzeyi: <br> </h4>
+                    <img draggable="false" src="pictures/13yas.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="movie-details-2">
+                    <h4>Yönetmen <br> <span>Sam Raimi</span></h4>
+                    <h4>Oyuncular <br> <span>Benedict Cumberbatch <br> Elizabeth Olsen <br> Chiwetel Ejiofor <br> Benedict Wong <br> Benedict Wong <br> Jett Klyne</span></h4>
+                </div>
+            </div>
+        </section> 
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+        $(".movie-details").hide();
+        $(".movie-details-2").hide();
+        $(".ayrıntılar").hide();
+
+        $("#ayrıntılar").click(function(){
+            $(".image-table").hide();
+            $(".ayrıntılar").show(500);
+            $(".movie-details").show(500);
+            $(".movie-details-2").show(500);
+            blur = true;
+            
+        });
+    
+    
+        $("#önerilenler").click(function(){
+            $(".ayrıntılar").hide();
+            $(".movie-details").hide();
+            $(".movie-details-2").hide();
+            $(".image-table").show(500);
+            blur = false;
+        });
+        
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 30) {
+                document.body.style.backgroundImage = "url('diziler/avengers/doctor-strange/doctor-strange/background-blur.png')";
+            } else {
+                document.body.style.backgroundImage = "url('diziler/avengers/doctor-strange/doctor-strange/background.png')";
+            }
+        }
+    </script>
+</body>
+</html>

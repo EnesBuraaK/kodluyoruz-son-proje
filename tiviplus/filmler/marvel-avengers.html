@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="marvel-avengers.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="tiviplus/pictures/TiVi-icon.ico">
+    <title>TiVi+ | Marvel’s Avengers</title>
+</head>
+<body>
+    <section id="header">
+            <div class="movie-info">
+                <img src="diziler/avengers/marvel-avengers/logo.png" alt="" width="240px" height="100px">
+                <br><br>
+                <img src="pictures/13yas.png" alt="" width="20px" height="20px" style="float: left;">
+                <span>HD</span><span>SHD</span>
+                <h4><b>2012 • 2 sa 25 dk</b></h5>
+                <br>
+                <p style="color: gray; font-family: 'quicksand-medium'; margin-top: 10px;">Bilim Kurgu, Fantastik, Süper Kahraman, Aksiyon-Macera</p>
+                <br>
+                <p style="color: white; font-family: 'quicksand-regular';">Marvel, Marvel’s Avengers (Marvel’in Yenilmezler'i), <br> Süper Kahramanlardan oluşan takımını sunar. Marvel’in ikon <br> haline gelmiş Süper Kahramanları Marvel efsanesinin <br> bu heyecan dolu versiyonunda ilk kez bir araya gelir.</p>
+                <button class="play-button"><i style="margin-right: 2px;" class="fa-solid fa-play"></i> OYNAT</button>
+                <button class="play-button-whtc"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+        <section id="alt-body">
+            <div class="navbar">
+                <p id="önerilenler">ÖNERİLER</p>
+                <p id="ayrıntılar">AYRINTILAR</p>
+                <hr>
+                <table class="image-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                        <a href=""><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/avengers-sonsuzluksavasi-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/ultron-cagi-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="koleksiyonlar/arka-plan-logo/thumnails/avengers-thumnails/öneri/endgame-thumnail.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                        <a href=""><img src="/tiviplus/home-pictures/Sana özel/the-boys.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href=""><img src="/tiviplus/home-pictures/Sana özel/thor-love-and-thunder.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                        <td>
+                            <a href=""><img src="/tiviplus/home-pictures/Sana özel/the-batman.png" alt="Fotoğraf bulunamadı"></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ayrıntılar">
+                    <h1>Marvel’s Avengers</h1>
+                    <h5>Marvel, Marvel’s Avengers (Marvel’in Yenilmezler'i), Süper Kahramanlardan  <br> oluşan takımını sunar. Marvel’in ikon haline gelmiş Süper Kahramanları <br> Iron Man (Demir Adam), The Incredible Hulk (Yeşil Dev Hulk), Thor ve Kaptan <br> Amerika Marvel efsanesinin bu heyecan dolu versiyonunda ilk kez bir araya <br> gelirken, başrollerde Robert Downey Jr., Scarlett Johansson ve Samuel L. <br> Jackson yer alıyor, filmin yönetmeni ise Joss Whedon. Beklenmedik bir düşman <br> tüm dünyanın güvenliğini tehdit ederken, uluslararası barışı koruma birliği S.H.I.E.L.D.’ın <br> Yöneticisi Nick Fury kendini dünyayı bir felaketten kurtarmak için bir ekibe ihtiyaç <br> duyarken bulur. Marvel’s Avengers (Marvel’in Yenilmezler) sizi hayretlere düşürecek <br> özel efektlere sahip bir aksiyon ve macera filmi.</h5>
+                </div>
+                <div class="movie-details">
+                    <h4>Süre: <br> <span>2 sa 25 dk</span></h4>
+                    <h4>Yayın Tarihi: <br> <span>2012</span></h4>
+                    <h4>Tür: <br> <span>Bilim Kurgu, Fantastik, Süper Kahraman <br> Aksiyon-Macera</span></h4>
+                    <h4>Yetişkinlik Düzeyi: <br> </h4>
+                    <img draggable="false" src="pictures/13yas.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="movie-details-2">
+                    <h4>Yönetmen <br> <span>Joss Whedon</span></h4>
+                    <h4>Oyuncular <br> <span>Robert Downey Jr. <br> Chris Evans <br> Mark Ruffalo <br> Chris Hemsworth <br> Scarlett Johansson <br> Jeremy Renner</span></h4>
+                </div>
+            </div>
+        </section>    
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+    
+        blur = false;
+        $(".movie-details").hide();
+        $(".movie-details-2").hide();
+        $(".ayrıntılar").hide();
+        $("#ayrıntılar").click(function(){
+            $(".image-table").hide();
+            $(".ayrıntılar").show(500);
+            $(".movie-details").show(500);
+            $(".movie-details-2").show(500);
+            blur = true;
+            if (blur == true) {
+                document.body.style.backgroundImage = "url('diziler/avengers/marvel-avengers/background-blur.png')";
+            }else {
+                document.body.style.backgroundImage = "url('diziler/avengers/marvel-avengers/background-blur.png')";
+            }
+        });
+    
+    
+        $("#önerilenler").click(function(){
+            document.body.style.backgroundImage = "url('diziler/avengers/marvel-avengers/background.png')";
+            $(".ayrıntılar").hide();
+            $(".movie-details").hide();
+            $(".movie-details-2").hide();
+            $(".image-table").show(500);
+            blur = false;
+        });
+        
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 30) {
+                document.body.style.backgroundImage = "url('diziler/avengers/marvel-avengers/background-blur.png')";
+            } else {
+                document.body.style.backgroundImage = "url('diziler/avengers/marvel-avengers/background.png')";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="search.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" sizes="32x32" href="pictures/TiVi-icon.ico">
+    <title>TiVi+ | Home</title>
+</head>
+<body>
+  <div class="navbar-shadow"></div>
+    <div id="navbar">
+      <div class="navbar-left">
+        <img draggable="false" src="pictures/TiVi+ Logo.png" alt="" width="95px" height="50px">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i> <span>ANA SAYFA</span></a> 
+        <a href="search.html"><i class="fa fa-fw fa-search"></i> <span>ARA</span></a> 
+        <a href="watchlist.html"><i class="fa-solid fa-plus"></i> <span>İZLEME LİSTEM</span></a> 
+        <a href="#"><i class="fa-solid fa-film"></i> <span>FİLMLER</span></a>
+      </div>
+      <div class="navbar-right">
+        <a href="profiller.html"><span><h3>Perry</h3></span></a>
+        <a href="profiller.html"><img draggable="false" class="profile-img" src="pictures/profiles/perry.png" alt=""></a>
+      </div>
+  </div>
+
+  <section id="search-area-position">
+    <div class="search-area">
+      <div class="search-bar">
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Film veya dizi arayın" name="search">
+      </div>
+    </div>
+  </section>
+  <section id="koleksiyon-area">
+      <div class="koleksiyonlar">
+        <table class="image-table">
+          <tbody>
+          <tr>
+              <td>
+              <a href="filmler/koleksiyonlar/recep-ivedik-koleksiyonu.html"><img src="search-pictures/koleksiyon-pictures/recep-ivedik-koleksiyonu.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+              </td>
+              <td>
+              <a href="filmler/koleksiyonlar/avengers-koleksiyon.html"><img src="search-pictures/koleksiyon-pictures/avengers.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+              </td>
+              <td>
+              <a href="filmler/koleksiyonlar/cars-koleksiyonu.html"><img src="search-pictures/koleksiyon-pictures/cars.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+              </td>
+              <td>
+              <a href="filmler/koleksiyonlar/doctor-strange-koleksiyonu.html"><img src="search-pictures/koleksiyon-pictures/doctor-strange.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <a href="filmler/koleksiyonlar/drama-koleksiyonu.html"><img src="search-pictures/koleksiyon-pictures/drama.png"false"></a>
+              </td>
+              <td>
+                  <a href="filmler/koleksiyonlar/karlar-ülkesi-koleksiyonu.html"><img src="search-pictures/koleksiyon-pictures/karlar-ülkesi.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+              </td>
+              <td>
+                  <a href="filmler/koleksiyonlar/komedi-koleksiyonu.html"><img src="search-pictures/koleksiyon-pictures/komedi.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+              </td>
+              <td>
+                  <a href="filmler/koleksiyonlar/türk-dizi-ve-filmler.html"><img src="search-pictures/koleksiyon-pictures/türk-dizi-ve-film.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+              </td>
+          </tr>
+        <tr>
+            <td>
+            <a href="filmler/koleksiyonlar/national-treasure-koleksiyonu.html"><img src="search-pictures/koleksiyon-pictures/büyük hazine.png" alt="Fotoğraf bulunamadı" draggable="false"></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+      </div>
+  </section>
+
+  </div>  
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 100) {
+            document.getElementById("navbar").style.backgroundColor = "rgb(14,11,20)";
+          } else {
+             document.getElementById("navbar").style.backgroundColor = 'transparent';
+          }
+        }
+    </script>
+</body>
+</html>
